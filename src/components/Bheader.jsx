@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 // import Certifications from "./Certifications"
 // import Projects from "./Container"
@@ -11,11 +11,11 @@ const Bheader = () => {
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <span class="ml-3 text-2xl text-neutral-50">DEVELOPER</span>
     </a>
-    <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer" href="/">About me</a>
-        <a class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer" href="/Container">Projects</a>
-        <a class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer" href="/Certificactions">Certifications</a>
-    </div>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer"> <Link to="/">About me</Link></a>
+        <a class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer"> <Link to="/Container">Projects</Link></a>
+        <a class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer"> <Link to="/Certificactions">Certifications</Link></a>
+    </nav>
     <button class="bg-transparent hover:bg-slate-400 text-slate-300 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-2">
       Contact
     </button>
