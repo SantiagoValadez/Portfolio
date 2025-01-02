@@ -1,7 +1,7 @@
-import Img06 from '../assets/img/Img06.png';
-import Img07 from '../assets/img/Img07.png';
-import Img08 from '../assets/img/Img08.png';
-import Img09 from '../assets/img/Img09.png';
+import Img06 from '../assets/img/Img06.png'
+import Img07 from '../assets/img/Img07.png'
+import Img08 from '../assets/img/Img08.png'
+import Img09 from '../assets/img/Img09.png'
 
 
 
