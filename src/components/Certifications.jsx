@@ -11,11 +11,11 @@ const Certifications = () => {
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-blue-100 hover:bg-gray-00 hover:bg-opacity-25 focus:outline-none focus:shadow-outline transform transition-all duration-500 cursor-pointer">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src= {Img03} alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Full Stack Java Developer. 150 hours</h1>
             <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
             <div class="flex items-center flex-wrap ">
               <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
@@ -40,11 +40,11 @@ const Certifications = () => {
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-blue-100 hover:bg-gray-200 hover:bg-opacity-25 focus:outline-none focus:shadow-outline transform transition-all duration-500 cursor-pointer">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={Img04} alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Development of programming logic</h1>
             <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
             <div class="flex items-center flex-wrap">
               <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
@@ -69,11 +69,11 @@ const Certifications = () => {
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-blue-100 hover:bg-gray-200 hover:bg-opacity-25 focus:outline-none focus:shadow-outline transform transition-all duration-500 cursor-pointer">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={Img05} alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Programming in java</h1>
             <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
             <div class="flex items-center flex-wrap ">
               <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More

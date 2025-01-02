@@ -10,12 +10,12 @@ function Navbar  ()  {
             </a>
             <nav class="fixed md:sticky lg:sticky sm:sticky top-0 text-gray-600 body-font bg-slate-500 pt-1 mx-auto opacity-90">
                 <ul class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <li class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer" ><Link to="/Home">Home</Link></li>
-                    <li class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer"><Link to="/Container">Projects</Link></li>
-                    <li class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer"><Link to="/Certifications">Certifications</Link></li>
+                    <li class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer transform transition-all duration-2000"><Link to="/Home">Home</Link></li>
+                    <li class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer transform transition-all duration-2000"><Link to="/Container">Projects</Link></li>
+                    <li class="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer transform transition-all duration-2000"><Link to="/Certifications">Certifications</Link></li>
                 </ul>
             </nav>
-            <button class="bg-transparent hover:bg-slate-400 text-slate-300 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-1">
+            <button class="bg-transparent hover:bg-slate-400 text-slate-300 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-1 focus:outline-none transform transition-all duration-500">
                 Contact
             </button>
         </div>
