@@ -18,9 +18,9 @@ const Home = () => {
                         </h1>
                         <p className="mb-8 leading-relaxed">with expertise in JavaScript, React, HTML, CSS, and backend development using Java and Spring Boot. Committed to creating efficient, user-friendly web solutions and eager to bring innovative ideas to the tech industry.</p>
                             <div className="flex justify-center">
-                                <button className="inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2">Resume</button>
-                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2">Hobbies</button>
-                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2">Goals and interests</button>
+                                <button className="inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2 focus:outline-none transform transition-all duration-500">Resume</button>
+                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2 focus:outline-none transform transition-all duration-500">Hobbies</button>
+                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2 focus:outline-none transform transition-all duration-500">Goals and interests</button>
                             </div>
                     </div>
                 </div>

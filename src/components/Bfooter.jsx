@@ -6,7 +6,7 @@ const Bfooter = () => {
       
       <span class="ml-3 text-xl">Santiago Valadez</span>
     </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Santiago Valadez —
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Santiago Valadez. Developed with HTML, CSS, JS, React and Tailwind. —
       <a href="https://www.instagram.com/valadez8829/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">valadez8829</a>
     </p>
 

@@ -24,7 +24,7 @@ const Container = () => {
           <img class="h-40 rounded w-full object-cover object-center mb-6" src={Img06} alt="content"/>
           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Website for a construction company</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          <p class="leading-relaxed text-base pb-5">Using HTML, CSS and JavaScript.</p>
         </div>
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
@@ -32,7 +32,7 @@ const Container = () => {
           <img class="h-40 rounded w-full object-cover object-center mb-6" src={Img07} alt="content"/>
           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4 pb-7">To do list in Java</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          <p class="leading-relaxed text-base pb-12">Using pure JAVA.</p>
         </div>
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
@@ -40,7 +40,7 @@ const Container = () => {
           <img class="h-40 rounded w-full object-cover object-center mb-6" src={Img08} alt="content"/>
           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4 pb-7">Weather App</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          <p class="leading-relaxed text-base pb-5">Using HTML, CSS, JavaScript and React.</p>
         </div>
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
@@ -48,7 +48,7 @@ const Container = () => {
           <img class="h-40 rounded w-full object-cover object-center mb-6" src={Img09} alt="content"/>
           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4 pb-7">Blog</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          <p class="leading-relaxed text-base pb-5">Using HTML, CSS and JavaScript.</p>
         </div>
       </div>
     </div>
