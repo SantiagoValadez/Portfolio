@@ -75,3 +75,7 @@ button:focus-visible {
   }
 }
 
+header {
+  z-index: 9999;
+}
+
