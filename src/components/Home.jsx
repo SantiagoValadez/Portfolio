@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
         <div>
-        <section class="text-gray-600 body-font">
+        <section class="text-gray-600 body-font sm:w-full lg:pl-24 md:pl-16 sm:pl-8 pl-4">
             <div className="container mx-auto flex px-5 py-1 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-5 md:mb-0">
                     <img className="object-cover object-center rounded-full mx-auto" alt="hero" src= {Img01} />
@@ -18,9 +18,9 @@ const Home = () => {
                         </h1>
                         <p className="mb-8 leading-relaxed">with expertise in JavaScript, React, HTML, CSS, and backend development using Java and Spring Boot. Committed to creating efficient, user-friendly web solutions and eager to bring innovative ideas to the tech industry.</p>
                             <div className="flex justify-center">
-                                <button className="inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2 focus:outline-none transform transition-all duration-500">Resume</button>
-                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2 focus:outline-none transform transition-all duration-500">Hobbies</button>
-                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2 focus:outline-none transform transition-all duration-500">Goals and interests</button>
+                                <button className="inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2">Resume</button>
+                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2">Hobbies</button>
+                                <button className="ml-4 inline-flex bg-transparent hover:bg-slate-400 text-slate-400 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded mt-2">Goals and interests</button>
                             </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const Home = () => {
         </div>
 
     
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font lg:pl-24 md:pl-16 sm:pl-8 pl-4">
         <div className="container px-5 py-5 mx-auto flex flex-wrap">
             <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                 <div className="flex flex-col mb-10 lg:items-start items-center">
@@ -81,8 +81,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden pl-14 mt-7">
-                <img alt="feature" class="object-cover object-center h-full w-full rounded-full" src= {Img02} />
+            <div className="lg:w-1/2 mb-10 lg:mb-0 rounded-lg overflow-hidden mt-7 sm:w-full ">
+                <img alt="feature" class="object-cover object-center h-full w-full md:w-full sm:w-full rounded-full" src= {Img02} />
             </div>
         </div>
         </section>
