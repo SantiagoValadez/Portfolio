@@ -68,7 +68,7 @@ const Certifications = () => {
             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Programming in java</h1>
             <p class="leading-relaxed mb-3">Basic and advanced JAVA fundamentals to develop.</p>
             <p class="leading-relaxed mb-3">2024</p>
-            <a class="text-indigo-500 inline-flex items-center hover:text-gray-900 cursor-pointer transform transition-all duration-2000">Learn More</a>
+            <a class="text-indigo-500 inline-flex items-center hover:text-gray-900 cursor-pointer transform transition-all duration-2000" href='https://www.udemy.com/certificate/UC-af72421c-5df9-434a-a9eb-9037d6f6b648/'>Learn More</a>
             <div class="flex items-center flex-wrap ">
               <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                 <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
