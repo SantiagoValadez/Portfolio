@@ -5,7 +5,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>
+    <div className='pt-16'>
         <div>
 
         <section className="text-gray-600 body-font sm:w-full px-4 lg:px-24 md:px-16">
