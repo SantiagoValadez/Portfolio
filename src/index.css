@@ -77,5 +77,15 @@ button:focus-visible {
 
 header {
   z-index: 9999;
+  position: fixed;
+  max-width: 100%;
+  /* top: 0; */
+  left: 0;
+  /* right: 0; */
+  /* height: 60px; /* Adjust the height as needed */
 }
+
+/* body {
+  padding-top: 60px; /* Same value as header height */
+/* }   */
 

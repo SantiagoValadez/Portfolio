@@ -1,6 +1,6 @@
 const Bfooter = () => {
   return (
-    <footer class="text-gray-600 body-font">
+    <footer class="text-gray-600 body-font mx-auto lg:pl-24 md:pl-16 sm:pl-8 pl-4">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       
