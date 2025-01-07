@@ -8,6 +8,11 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleLinkClick = () => {
+    setIsOpen(false); // Cierra el menú
+    window.scrollTo(0, 0); // Desplaza al inicio de la página
+  };
+
   return (
     <header className="fixed top-0 w-full bg-slate-500 text-gray-600 body-font pt-1 pb-2 opacity-90">
       <div className="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
@@ -39,13 +44,13 @@ function Navbar() {
         >
           <ul className="flex flex-col md:flex-row items-center text-base justify-center">
             <li className="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer transform transition-all duration-2000">
-              <Link to="/Home">Home</Link>
+              <Link to="/Home" onClick={handleLinkClick}>Home</Link>
             </li>
             <li className="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer transform transition-all duration-2000">
-              <Link to="/Container">Projects</Link>
+              <Link to="/Container" onClick={handleLinkClick}>Projects</Link>
             </li>
             <li className="mr-5 hover:text-gray-900 text-xl text-slate-300 cursor-pointer transform transition-all duration-2000">
-              <Link to="/Certifications">Certifications</Link>
+              <Link to="/Certifications" onClick={handleLinkClick}>Certifications</Link>
             </li>
 
             {/* Botón de Modal (Visible dentro del menú para móviles) */}
@@ -65,14 +70,10 @@ function Navbar() {
 }
 
 function ModalComponent() {
-  // Estado para controlar si la modal está abierta o cerrada
   const [isOpen, setIsOpen] = useState(false);
-
-  // Funciones para abrir y cerrar la modal
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
 
-  // Estilo de la ventana modal
   const modalStyle = {
     position: "absolute",
     top: "50%",
@@ -87,12 +88,15 @@ function ModalComponent() {
 
   return (
     <div>
-      {/* Botón para abrir la modal */}
-      <Button class="bg-transparent hover:bg-slate-400 text-slate-300 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-2 focus:"variant="contained" color="primary" onClick={handleOpen}>
+      <Button
+        class="bg-transparent hover:bg-slate-400 text-slate-300 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-2 focus:"
+        variant="contained"
+        color="primary"
+        onClick={handleOpen}
+      >
         Contact
       </Button>
 
-      {/* Ventana Modal */}
       <Modal
         open={isOpen}
         onClose={handleClose}
@@ -100,30 +104,25 @@ function ModalComponent() {
         aria-describedby="modal-description"
       >
         <Box sx={modalStyle}>
-          {/* Título de la Modal */}
           <Typography id="modal-title" variant="h6" component="h2">
             Contact
           </Typography>
-
-          {/* Contenido de la Modal */}
           <Typography id="modal-description" sx={{ mt: 2 }}>
             Name: Santiago Valadez.
           </Typography>
           <Typography id="modal-description" sx={{ mt: 2 }}>
             Phone: +52 3121034713 or +52 5653678194
           </Typography>
-          <a>
-          <Typography id="modal-description" className='cursor-pointer' sx={{ mt: 2 }}>
-            Email: saniago1340@gmail.com
-          </Typography>
+          <a href="mailto:saniago1340@gmail.com">
+            <Typography
+              id="modal-description"
+              className="cursor-pointer"
+              sx={{ mt: 2 }}
+            >
+              Email: saniago1340@gmail.com
+            </Typography>
           </a>
-
-          {/* Botón para cerrar */}
-          <Button
-            variant="outlined"
-            onClick={handleClose}
-            sx={{ mt: 2 }}
-          >
+          <Button variant="outlined" onClick={handleClose} sx={{ mt: 2 }}>
             Cerrar
           </Button>
         </Box>
@@ -133,6 +132,8 @@ function ModalComponent() {
 }
 
 export default Navbar;
+
+
 
 
 
