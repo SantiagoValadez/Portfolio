@@ -88,7 +88,7 @@ function ModalComponent() {
   return (
     <div>
       {/* Botón para abrir la modal */}
-      <Button variant="contained" color="primary" onClick={handleOpen}>
+      <Button class="bg-transparent hover:bg-slate-400 text-slate-300 font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded mt-2 focus:"variant="contained" color="primary" onClick={handleOpen}>
         Contact
       </Button>
 
@@ -102,13 +102,21 @@ function ModalComponent() {
         <Box sx={modalStyle}>
           {/* Título de la Modal */}
           <Typography id="modal-title" variant="h6" component="h2">
-            Contact Us
+            Contact
           </Typography>
 
           {/* Contenido de la Modal */}
           <Typography id="modal-description" sx={{ mt: 2 }}>
-            Aquí puedes poner cualquier contenido, como texto, imágenes, formularios, o botones adicionales.
+            Name: Santiago Valadez.
           </Typography>
+          <Typography id="modal-description" sx={{ mt: 2 }}>
+            Phone: +52 3121034713 or +52 5653678194
+          </Typography>
+          <a>
+          <Typography id="modal-description" className='cursor-pointer' sx={{ mt: 2 }}>
+            Email: saniago1340@gmail.com
+          </Typography>
+          </a>
 
           {/* Botón para cerrar */}
           <Button
