@@ -17,6 +17,10 @@ const Home = () => {
     setModalContent('');
   };
 
+  const handleExternalRedirect = () => {
+    window.open('https://www.example.com', '_blank');
+  };
+
   return (
     <div className="pt-20 mx-auto">
       <section className="text-gray-600 body-font sm:w-full px-4 lg:px-24 md:px-16 py-6">
@@ -34,7 +38,7 @@ const Home = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 variant="outlined"
-                onClick={() => handleOpenModal('This is the Resume content')}
+                onClick={() => handleOpenModal('See resume!')}
                 sx={{ mt: 2 }}
               >
                 Resume
@@ -79,19 +83,27 @@ const Home = () => {
           }}
         >
           <Typography id="modal-title" variant="h6" component="h2">
-            Modal Content
+            Check it out to find out more about me!
           </Typography>
           <Typography id="modal-description" sx={{ mt: 2 }}>
             {modalContent}
           </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={handleCloseModal}
-            sx={{ mt: 2 }}
-          >
-            Close
-          </Button>
+          <div className="flex flex-col gap-2 mt-4">
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={handleExternalRedirect}
+            >
+              Go to External Page
+            </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleCloseModal}
+            >
+              Close
+            </Button>
+          </div>
         </Box>
       </Modal>
 
