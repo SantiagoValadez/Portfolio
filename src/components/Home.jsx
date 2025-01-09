@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   const handleExternalRedirect = () => {
-    window.open('https://www.example.com', '_blank');
+    window.open('https://drive.google.com/drive/folders/12a3jfwm-uUvm_mG94-OlJ0CjnpYEcCf1'); // Reemplaza con tu URL externa
   };
 
   return (
@@ -38,7 +38,7 @@ const Home = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 variant="outlined"
-                onClick={() => handleOpenModal('See resume!')}
+                onClick={() => handleOpenModal('Resume')}
                 sx={{ mt: 2 }}
               >
                 Resume
@@ -88,22 +88,27 @@ const Home = () => {
           <Typography id="modal-description" sx={{ mt: 2 }}>
             {modalContent}
           </Typography>
-          <div className="flex flex-col gap-2 mt-4">
+
+          {/* Botón para redirigir a una página externa */}
+          {modalContent === 'Resume' && (
             <Button
               variant="contained"
               color="secondary"
               onClick={handleExternalRedirect}
+              sx={{ mt: 2 }}
             >
               Go to External Page
             </Button>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={handleCloseModal}
-            >
-              Close
-            </Button>
-          </div>
+          )}
+
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleCloseModal}
+            sx={{ mt: 2 }}
+          >
+            Close
+          </Button>
         </Box>
       </Modal>
 
