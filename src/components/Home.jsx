@@ -38,21 +38,21 @@ const Home = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 variant="outlined"
-                onClick={() => handleOpenModal('Resume')}
+                onClick={() => handleOpenModal('I hold a degree in Architecture, which has fueled my passion for design and creativity. This passion is reflected in the websites I develop, blending aesthetics and functionality to create unique experiences. Click the link below to learn more about me!')}
                 sx={{ mt: 2 }}
               >
                 Resume
               </Button>
               <Button
                 variant="outlined"
-                onClick={() => handleOpenModal('This is the Hobbies content')}
+                onClick={() => handleOpenModal('My hobbies include video games, anime, movies, music, playing musical instruments, and spending time with my friends. However, I’m also passionate about topics that challenge me and provide opportunities to constantly learn new things.')}
                 sx={{ mt: 2 }}
               >
                 Hobbies
               </Button>
               <Button
                 variant="outlined"
-                onClick={() => handleOpenModal('This is the Goals and Interests content')}
+                onClick={() => handleOpenModal('As an architect with a strong design background, I aim to merge my creative skills with my passion for technology to contribute to innovative projects in the tech sector. I thrive on challenges and am committed to continuous learning and professional growth. My goal is to join a company where I can make a meaningful impact, bring value through my skills, and develop solutions that align with organizational goals.')}
                 sx={{ mt: 2 }}
               >
                 Goals and Interests
@@ -90,18 +90,20 @@ const Home = () => {
           </Typography>
 
           {/* Botón para redirigir a una página externa */}
-          {modalContent === 'Resume' && (
+          {modalContent === 'I hold a degree in Architecture, which has fueled my passion for design and creativity. This passion is reflected in the websites I develop, blending aesthetics and functionality to create unique experiences. Click the link below to learn more about me!' && (
             <Button
+              id='options'
               variant="contained"
               color="secondary"
               onClick={handleExternalRedirect}
               sx={{ mt: 2 }}
             >
-              Go to External Page
+              Click here to see my resume
             </Button>
           )}
 
           <Button
+            id='options'
             variant="contained"
             color="primary"
             onClick={handleCloseModal}
