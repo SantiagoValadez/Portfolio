@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Modal, Box, Button, Typography } from '@mui/material';
 import Img01 from '../assets/img/Img01.png';
@@ -24,45 +25,83 @@ const Home = () => {
   };
 
   const stats = [
-    { value: '4+', label: 'projects' },
-    { value: '2+', label: 'years learning' },
-    { value: '100%', label: 'dedication' },
+    { value: '3+', label: 'core stacks' },
+    { value: '100%', label: 'focus on quality' },
+    { value: 'UX', label: 'driven' },
   ];
 
   const stack = ['React', 'JavaScript', 'HTML', 'CSS', 'Java', 'Spring Boot', 'Tailwind', 'Git'];
 
+  const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="pt-16 pb-16">
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.12),_transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.16),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.12),_transparent_30%)]" />
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/50 to-transparent" />
+
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-            <div className="text-center lg:text-left">
-              <span className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr]">
+            <motion.div
+              className="text-center lg:text-left"
+              initial="hidden"
+              animate="visible"
+              variants={fadeUp}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+            >
+              <motion.span
+                className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm"
+                initial={{ opacity: 0, y: -12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.5 }}
+              >
                 Full Stack Developer · Frontend focused
-              </span>
+              </motion.span>
 
-              <h1 className="mt-6 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-                I design and build digital experiences that feel modern, useful, and memorable.
-              </h1>
+              <motion.h1
+                className="mt-6 text-4xl font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.15, duration: 0.7 }}
+              >
+                I build digital products that feel premium, useful, and ready for real business impact.
+              </motion.h1>
 
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600 mx-auto lg:mx-0">
-                I am Santiago, a self-taught web developer with a strong focus on JavaScript, React, HTML, CSS, and Java with Spring Boot. I enjoy creating clean interfaces and functional solutions that merge design with technical execution.
-              </p>
+              <motion.p
+                className="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-600 lg:mx-0"
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.25, duration: 0.7 }}
+              >
+                I am Santiago, a web developer focused on creating clean interfaces and functional solutions with JavaScript, React, HTML, CSS, and Java with Spring Boot. I enjoy turning ideas into experiences that combine design quality, usability, and technical execution.
+              </motion.p>
 
-              <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+              <motion.div
+                className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start"
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.35, duration: 0.7 }}
+              >
                 <Button
                   variant="contained"
                   onClick={() => navigate('/projects')}
                   sx={{
                     borderRadius: '999px',
                     background: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%)',
-                    px: 3,
+                    px: 3.2,
                     py: 1.5,
                     textTransform: 'none',
-                    fontWeight: 700,
-                    boxShadow: '0 16px 32px rgba(37, 99, 235, 0.25)',
-                    '&:hover': { background: 'linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%)' },
+                    fontWeight: 800,
+                    boxShadow: '0 20px 40px rgba(37, 99, 235, 0.28)',
+                    letterSpacing: '0.01em',
+                    transition: 'all 0.2s ease',
+                    '&:hover': {
+                      background: 'linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%)',
+                      transform: 'translateY(-1px)',
+                    },
                   }}
                 >
                   View projects
@@ -75,39 +114,67 @@ const Home = () => {
                     borderRadius: '999px',
                     borderColor: '#cbd5e1',
                     color: '#0f172a',
-                    px: 3,
+                    px: 3.2,
                     py: 1.5,
                     textTransform: 'none',
-                    fontWeight: 700,
+                    fontWeight: 800,
+                    transition: 'all 0.2s ease',
+                    '&:hover': {
+                      borderColor: '#94a3b8',
+                      background: 'rgba(148, 163, 184, 0.06)',
+                    },
                   }}
                 >
                   Resume
                 </Button>
-              </div>
+              </motion.div>
 
-              <div className="mt-10 grid max-w-lg grid-cols-3 gap-4 mx-auto lg:mx-0">
+              <motion.div
+                className="mx-auto mt-10 grid max-w-lg grid-cols-3 gap-4 lg:mx-0"
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.45, duration: 0.7 }}
+              >
                 {stats.map((item) => (
-                  <div key={item.label} className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur-sm">
+                  <div
+                    key={item.label}
+                    className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-[0_10px_30px_rgba(15,23,42,0.04)] backdrop-blur-sm"
+                  >
                     <div className="text-2xl font-black text-slate-900">{item.value}</div>
-                    <div className="mt-1 text-xs uppercase tracking-[0.18em] text-slate-500">{item.label}</div>
+                    <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-slate-500">{item.label}</div>
                   </div>
                 ))}
-              </div>
+              </motion.div>
 
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+              <motion.div
+                className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start"
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.55, duration: 0.7 }}
+              >
                 {stack.map((item) => (
-                  <span key={item} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-700">
+                  <motion.span
+                    key={item}
+                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm"
+                    whileHover={{ y: -2, scale: 1.02 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 16 }}
+                  >
                     {item}
-                  </span>
+                  </motion.span>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="relative">
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: 28 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
               <div className="absolute -left-10 top-10 h-32 w-32 rounded-full bg-blue-200/60 blur-3xl" />
               <div className="absolute -right-10 bottom-12 h-32 w-32 rounded-full bg-indigo-200/60 blur-3xl" />
 
-              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-3 shadow-[0_25px_70px_rgba(15,23,42,0.14)]">
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-3 shadow-[0_30px_80px_rgba(15,23,42,0.14)]">
                 <div className="overflow-hidden rounded-[1.5rem] bg-slate-100">
                   <img
                     src={Img01}
@@ -117,27 +184,27 @@ const Home = () => {
                 </div>
 
                 <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                  <div className="rounded-2xl bg-slate-900 p-4 text-white">
-                    <div className="text-xs uppercase tracking-[0.2em] text-slate-300">Focus</div>
+                  <div className="rounded-2xl bg-slate-900 p-4 text-white shadow-lg shadow-slate-900/10">
+                    <div className="text-[10px] uppercase tracking-[0.2em] text-slate-300">Focus</div>
                     <div className="mt-2 text-lg font-bold">UX & Web</div>
                   </div>
-                  <div className="rounded-2xl bg-blue-50 p-4 text-slate-900">
-                    <div className="text-xs uppercase tracking-[0.2em] text-slate-500">Stack</div>
+                  <div className="rounded-2xl bg-blue-50 p-4 text-slate-900 shadow-sm">
+                    <div className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Stack</div>
                     <div className="mt-2 text-lg font-bold">React</div>
                   </div>
-                  <div className="rounded-2xl bg-indigo-50 p-4 text-slate-900">
-                    <div className="text-xs uppercase tracking-[0.2em] text-slate-500">Back-end</div>
+                  <div className="rounded-2xl bg-indigo-50 p-4 text-slate-900 shadow-sm">
+                    <div className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Back-end</div>
                     <div className="mt-2 text-lg font-bold">Java</div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="mt-10 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl rounded-[2rem] border border-slate-200 bg-white/80 p-6 shadow-sm backdrop-blur-sm sm:p-8">
+      <section className="mt-12 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl rounded-[2rem] border border-slate-200 bg-white/80 p-6 shadow-[0_22px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm sm:p-8">
           <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div className="overflow-hidden rounded-[1.5rem] bg-slate-100">
               <img src={Img02} alt="Developer workspace" className="h-full w-full object-cover" />
@@ -145,27 +212,31 @@ const Home = () => {
 
             <div className="space-y-6">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">What I do</p>
-                <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">I build clean, functional digital products from idea to execution.</h2>
+                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">About me</p>
+                <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">I combine design thinking, technical execution, and a strong focus on usability.</h2>
               </div>
+
+              <p className="text-lg leading-8 text-slate-600">
+                I&apos;m a developer with a creative background and a strong interest in building meaningful digital experiences. I enjoy taking ideas from concept to execution, working with clean code, improving user flows, and creating interfaces that are both functional and visually polished.
+              </p>
 
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                   <div className="mb-3 text-2xl">🎨</div>
-                  <h3 className="text-lg font-bold text-slate-900">Frontend</h3>
-                  <p className="mt-2 text-sm text-slate-600">Interfaces modern, responsive and easy to use.</p>
+                  <h3 className="text-lg font-bold text-slate-900">UI mindset</h3>
+                  <p className="mt-2 text-sm text-slate-600">I value clarity, aesthetics, and clean interfaces that improve the user experience.</p>
                 </div>
 
                 <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                   <div className="mb-3 text-2xl">⚙️</div>
-                  <h3 className="text-lg font-bold text-slate-900">Backend</h3>
-                  <p className="mt-2 text-sm text-slate-600">Java and Spring Boot for structured logic and services.</p>
+                  <h3 className="text-lg font-bold text-slate-900">Technical focus</h3>
+                  <p className="mt-2 text-sm text-slate-600">I work with frontend and backend tools to build robust, coherent solutions.</p>
                 </div>
 
                 <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                   <div className="mb-3 text-2xl">🚀</div>
-                  <h3 className="text-lg font-bold text-slate-900">Delivery</h3>
-                  <p className="mt-2 text-sm text-slate-600">Practical solutions designed for real business needs.</p>
+                  <h3 className="text-lg font-bold text-slate-900">Growth</h3>
+                  <p className="mt-2 text-sm text-slate-600">I like learning fast, adapting to new challenges, and improving every iteration.</p>
                 </div>
               </div>
 

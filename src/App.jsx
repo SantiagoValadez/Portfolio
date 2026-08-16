@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './components/About';
 import Certifications from './components/Certifications';
 import Container from './components/Container';
 import Home from './components/Home';
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Container />} />
           <Route path="/certifications" element={<Certifications />} />
         </Routes>
