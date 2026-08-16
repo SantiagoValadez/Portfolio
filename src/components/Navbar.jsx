@@ -36,6 +36,12 @@ function Navbar() {
               <Link to="/" onClick={handleLinkClick}>Home</Link>
             </li>
             <li>
+              <Link to="/about" onClick={handleLinkClick}>About</Link>
+            </li>
+            <li>
+              <Link to="/experience" onClick={handleLinkClick}>Experience</Link>
+            </li>
+            <li>
               <Link to="/projects" onClick={handleLinkClick}>Projects</Link>
             </li>
             <li>
