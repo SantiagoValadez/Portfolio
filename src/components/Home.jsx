@@ -67,7 +67,7 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15, duration: 0.7 }}
               >
-                I build digital products that feel premium, useful, and ready for real business impact.
+                I build clean, functional interfaces that drive real business value.
               </motion.h1>
 
               <motion.p
@@ -76,7 +76,7 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25, duration: 0.7 }}
               >
-                I am Santiago, a web developer focused on creating clean interfaces and functional solutions with JavaScript, React, HTML, CSS, and Java with Spring Boot. I enjoy turning ideas into experiences that combine design quality, usability, and technical execution.
+                Full Stack developer with a focus on frontend interfaces. I combine JavaScript, React, and Java with Spring Boot to create solutions that are both technically sound and visually compelling. I work best on projects where design precision and functional delivery matter equally.
               </motion.p>
 
               <motion.div

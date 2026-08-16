@@ -38,15 +38,15 @@ function About() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">About me</p>
             <h1 className="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              I build digital experiences with both technical precision and a creative point of view.
+              Full Stack developer who transforms concepts into scalable, production-ready solutions.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              I am a developer with a strong interest in web design and problem solving. I enjoy creating efficient, clear, and visually polished interfaces that make technology feel more approachable and useful for real users.
+              I bring together technical rigor, design thinking, and a track record of shipping products that work. My professional experience spans backend systems, modern frontends, and the full lifecycle from concept to production deployment.
             </p>
 
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              My background in architecture gave me a natural appreciation for structure, composition, and aesthetics, which I now apply to the way I design and build interfaces. I like turning ideas into products that are practical, modern, and built with a strong sense of purpose.
+              I'm most effective when solving real business problems: automating workflows, optimizing user experiences, and building systems that scale. I enjoy working with teams, learning new challenges, and taking full ownership of features from design through implementation and validation.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
